@@ -1,5 +1,5 @@
 <?php
-namespace AsimovExpress\AdobeConnect;
+namespace SaeedSajadi\AdobeConnect;
 use Illuminate\Support\Facades\Facade;
 /**
  * Facade class

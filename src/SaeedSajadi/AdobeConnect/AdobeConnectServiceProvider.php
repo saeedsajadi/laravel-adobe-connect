@@ -1,6 +1,6 @@
 <?php
 
-namespace AsimovExpress\AdobeConnect;
+namespace SaeedSajadi\AdobeConnect;
 
 use Illuminate\Support\ServiceProvider;
 use App;
@@ -35,7 +35,7 @@ class AdobeConnectServiceProvider extends ServiceProvider {
             __DIR__.'/../../config/adobe-connect.php', 'adobe-connect'
         );
 
-        $this->app->singleton('AsimovExpress\AdobeConnect\AdobeConnectClient', function ($app) {
+        $this->app->singleton('SaeedSajadi\AdobeConnect\AdobeConnectClient', function ($app) {
             $host = config('adobe-connect.host');
             $username = config('adobe-connect.username');
             $password = config('adobe-connect.password');
@@ -45,7 +45,7 @@ class AdobeConnectServiceProvider extends ServiceProvider {
         });
 
         App::bind('adobe-connect', function(){
-            return App::make('AsimovExpress\AdobeConnect\AdobeConnectClient');
+            return App::make('SaeedSajadi\AdobeConnect\AdobeConnectClient');
         });
     }
 
@@ -55,7 +55,7 @@ class AdobeConnectServiceProvider extends ServiceProvider {
      * @return array
      */
     public function provides(){
-        return ['AsimovExpress\AdobeConnect\AdobeConnectClient'];
+        return ['SaeedSajadi\AdobeConnect\AdobeConnectClient'];
     }
 
 }

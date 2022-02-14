@@ -1,5 +1,5 @@
 <?php
-namespace AsimovExpress\AdobeConnect;
+namespace SaeedSajadi\AdobeConnect;
 
 use AdobeConnect\ApiClient;
 

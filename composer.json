@@ -1,22 +1,27 @@
 {
-    "name": "asimov-express/laravel-adobe-connect",
+    "name": "saeedsajadi/laravel-adobe-connect",
     "description": "Adobe Connect Integration for Laravel 5.*",
     "authors": [
         {
-            "name": "Jorge Sanchez",
-            "email": "jorge.sanchez.h@gmail.com"
+            "name": "Saeed Sajadi",
+            "email": "saeed.sajadi@gmail.com"
         }
     ],
     "require": {
-        "php": ">=5.4.0",
-        "platforg/adobe-connect": "^0.1.1",
-        "illuminate/support": "5.*"
+        "platforg/adobe-connect": "^0.2.4"
     },
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "AsimovExpress\\AdobeConnect\\": "src/AsimovExpress/AdobeConnect"
+            "SaeedSajadi\\AdobeConnect\\": "src/SaeedSajadi/AdobeConnect"
         }
+    },
+    "extra": {
+      "laravel": {
+        "providers": [
+          "SaeedSajadi\\AdobeConnect\\AdobeConnectServiceProvider"
+        ]
+      }
     },
     "minimum-stability": "dev"
 }
