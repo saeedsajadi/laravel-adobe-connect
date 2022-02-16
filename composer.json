@@ -1,6 +1,6 @@
 {
     "name": "saeedsajadi/laravel-adobe-connect",
-    "description": "Adobe Connect Integration for Laravel 5.*",
+    "description": "Adobe Connect Integration for Laravel",
     "authors": [
         {
             "name": "Saeed Sajadi",
